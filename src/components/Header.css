@@ -1,0 +1,31 @@
+/* Container styles for responsiveness */
+.headerMain {
+  width: 100vw;
+  display: flex;
+  justify-content: center; /* Centers the logos horizontally */
+  align-items: center; /* Centers the logos vertically */
+  flex-wrap: wrap; /* Wraps logos to the next row if needed on smaller screens */
+  gap: 20px; /* Adds spacing between logos */
+  padding: 10px; /* Adds padding around the container */
+}
+
+/* Logo styles */
+img {
+  max-width: 100%; /* Ensures images don't overflow their container */
+  height: auto; /* Maintains aspect ratio */
+  width: 105px; /* Default size for logos */
+  transition: transform 0.2s ease-in-out; /* Adds a smooth hover effect */
+}
+
+/* Adjust logo size for larger screens */
+@media (min-width: 768px) {
+  img {
+    width: 100px; /* Slightly larger logos for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  img {
+    width: 120px; /* Larger logos for desktops */
+  }
+}
