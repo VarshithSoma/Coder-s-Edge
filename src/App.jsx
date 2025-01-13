@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import LeetCodeContests from "./components/LeetCodeContests";
 import "./App.css";
 import CodeForcesContests from "./components/CodeForcesContests";
+import CodeChefContests from "./components/CodeChefContests";
 function App() {
   return (
     <div>
@@ -10,8 +11,9 @@ function App() {
         <Header />
         <h3>Next Coding Contests</h3>
         <p>Prepare yourself for the next set of exciting coding challenges.</p>
-        <LeetCodeContests></LeetCodeContests>
-        <CodeForcesContests></CodeForcesContests>
+        {/* <LeetCodeContests></LeetCodeContests> */}
+        {/* <CodeForcesContests></CodeForcesContests> */}
+        <CodeChefContests></CodeChefContests>
       </div>
     </div>
   );
