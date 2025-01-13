@@ -101,3 +101,6 @@
 .btw td:nth-child(3) {
   font-weight: 400; /* Slightly lighter font for values */
 }
+.contest:hover {
+  cursor: pointer;
+}
