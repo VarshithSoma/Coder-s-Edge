@@ -63,3 +63,6 @@ button.active {
   font-size: 1.5rem;
   color: white;
 }
+.contest-container {
+  width: 100%;
+}

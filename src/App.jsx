@@ -46,22 +46,30 @@ function App() {
           </button>
         </div>
 
-        {isLoading ? (
-          <div className="loading">Loading...</div>
-        ) : (
-          <>
-            {selectedPlatform === "LeetCode" && <LeetCodeContests />}
-            {selectedPlatform === "CodeChef" && <CodeChefContests />}
-            {selectedPlatform === "CodeForces" && <CodeForcesContests />}
-            {selectedPlatform === "" && (
-              <>
-                <CodeChefContests />
-                <LeetCodeContests />
-                <CodeForcesContests />
-              </>
-            )}
-          </>
-        )}
+        <span
+          className="contest-container"
+          style={{
+            display: selectedPlatform === "CodeChef" ? "block" : "none",
+          }}
+        >
+          <CodeChefContests />
+        </span>
+        <span
+          className="contest-container"
+          style={{
+            display: selectedPlatform === "LeetCode" ? "block" : "none",
+          }}
+        >
+          <LeetCodeContests />
+        </span>
+        <span
+          className="contest-container"
+          style={{
+            display: selectedPlatform === "CodeForces" ? "block" : "none",
+          }}
+        >
+          <CodeForcesContests />
+        </span>
       </div>
     </>
   );
