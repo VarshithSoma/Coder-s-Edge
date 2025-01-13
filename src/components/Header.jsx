@@ -5,9 +5,9 @@ import "./Header.css";
 function Header() {
   return (
     <div className="headerMain">
-      <img src={leetCodeLogo} className={leetCodeLogo} alt="" srcset="" />
-      <img src={CodeChefLogo} className={CodeChefLogo} alt="" srcset="" />
-      <img src={codeForcesLogo} className={codeForcesLogo} alt="" srcset="" />
+      <img src={leetCodeLogo} className={leetCodeLogo} />
+      <img src={CodeChefLogo} className={CodeChefLogo} />
+      <img src={codeForcesLogo} className={codeForcesLogo} />
     </div>
   );
 }

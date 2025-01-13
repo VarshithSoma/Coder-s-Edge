@@ -1,7 +1,7 @@
 .small {
   width: 20px;
   height: 20px;
-  margin-top: -55px;
+  display: inline-block;
 }
 .data {
   display: flex;
@@ -16,23 +16,15 @@
   line-height: 1.5; /* Add spacing between lines */
 }
 
-.data div {
+.data .heading {
   display: flex;
   flex-direction: row; /* Horizontal layout for rows */
   align-items: center; /* Center items vertically */
-  justify-content: space-between; /* Space between text and values */
   gap: 10px; /* Space between colons and text */
 }
 
-.data div h3:nth-child(2) {
-  color: #888888; /* Lighter color for colon */
-}
-
-h3:first-of-type {
-  margin-bottom: 5px; /* Add space below the title */
-}
 .contest {
-  background-color: #3f3f46; /* Dark background */
+  background-color: #1d1d1d; /* Dark background */
   color: #ffffff; /* White text */
   border-radius: 5px; /* Rounded corners */
   padding: 20px;
@@ -45,25 +37,67 @@ h3:first-of-type {
   margin: 10px 0px;
 }
 
-.data {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
 .data h3 {
   font-size: 1rem;
   font-weight: 500;
   margin: 0;
 }
+.small {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
 
-.data div {
+.btw {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.data {
+  width: 100%;
+}
+.btw h3 {
+  display: inline-block;
+}
+.contest {
+  background-color: #1d1d1d; /* Dark background */
+  color: #ffffff; /* White text */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  margin: 10px auto; /* Center the component */
+}
+
+.heading {
+  display: flex;
+  align-items: center;
   gap: 10px;
 }
 
-.data div h3:nth-child(2) {
-  color: #888888; /* Light gray color for colon */
+.btw {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.btw td {
+  padding: 5px 10px; /* Space within table cells */
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.btw td:nth-child(2) {
+  width: 10px; /* Keep colons compact */
+  text-align: center;
+}
+
+.btw td:nth-child(3) {
+  font-weight: 400; /* Slightly lighter font for values */
 }
