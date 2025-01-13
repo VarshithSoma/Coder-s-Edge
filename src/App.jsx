@@ -16,7 +16,7 @@ function App() {
     // Simulate API fetch time
     setTimeout(() => {
       setIsLoading(false); // Remove the loading state after fetching data
-    }, 1000); // Adjust this timeout to simulate fetch duration
+    }, 2000); // Adjust this timeout to simulate fetch duration
   };
 
   return (
