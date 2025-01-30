@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import leetCodeLogo from "../assets/small-leetcode.png";
+import leetCodeLogo from "../assets/leetcode-white-bg.png";
 import "./Contest.css";
 
 function Contest(props) {
