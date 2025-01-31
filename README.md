@@ -55,12 +55,15 @@ Since some requests are blocked due to CORS policies, a proxy was used to forwar
 1. Clone the repository:
    ```bash
    git clone https://github.com/VarshithSoma/Coder-s-Edge.git
-   cd project-name
+   cd Coder-s-Edge
    ```
 2. Install dependencies:
    ```bash
-   npm install  # For Node.js setup
+   npm install
    ```
-3. Start the main application.
+3. Start the main application:
+   ```bash
+   npm run dev
+   ```
 
 ---
