@@ -1,68 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap");
+
 * {
-  margin: 0;
-  padding: 0;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  box-sizing: border-box;
 }
 
-.parent {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-h3 {
+/* Responsive upcoming-contests-text */
+.upcoming-contests-text {
+  color: #0e141b;
+  letter-spacing: 0.015em;
+  font-size: 2rem;
   font-weight: bold;
-  font-size: 2.25rem;
-  margin: 0;
-  padding: 0;
-  font-family: 700;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
-p {
-  color: rgb(156 163 175);
-  font-size: 1rem;
-  width: 70%;
-  line-height: 1.8rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
+/* Responsive buttons */
 .buttons {
-  background-color: #1d1d1d; /* Dark background */
-  width: 80%;
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin: 20px auto;
-  border-radius: 5px;
-}
-
-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #333; /* Default button color */
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-button:hover {
-  background-color: #555; /* Hover effect */
-}
-
-button.active {
-  background-color: #1d1d1d; /* Active button color */
-}
-
-.loading {
-  margin: 20px;
-  font-size: 1.5rem;
-  color: white;
-}
-.contest-container {
+  padding: 0 10%;
   width: 100%;
+}
+button {
+  box-sizing: border-box;
+  background-color: white;
+  padding: 0.7rem 0rem;
+  margin: 1rem 1rem;
+  border: none;
+  font-weight: 700;
+  color: rgb(79, 115, 150);
+  transition-property: color;
+  transition-property: border;
+  transition-duration: 1ms;
+  transition-timing-function: linear;
+  transition-delay: 1ms;
+}
+.active {
+  border-bottom: 3px solid rgb(51 141 230);
+  color: rgb(14, 20, 27);
+  text-decoration-style: solid;
 }

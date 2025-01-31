@@ -23,9 +23,8 @@ function App() {
     <>
       <div className="parent">
         <Header />
-        <h3>Next Coding Contests</h3>
-        <p>Prepare yourself for the next set of exciting coding challenges.</p>
         <div className="buttons">
+          <p className="upcoming-contests-text">Upcoming Contests</p>
           <button
             className={selectedPlatform === "CodeChef" ? "active" : ""}
             onClick={() => handlePlatformChange("CodeChef")}
