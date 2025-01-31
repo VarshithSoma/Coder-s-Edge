@@ -13,10 +13,10 @@ This project fetches contest and problem data from **CodeChef**, **CodeForces**,
 
 ### CodeChef
 
-- **API or Web Scraping?**
-  - CodeChef does not provide an official public API for contests and problems.
-  - Used web scraping to extract contest details from their [contests page](https://www.codechef.com/contests).
-  - BeautifulSoup in Python or Puppeteer in JavaScript can be used for scraping.
+- **API Available**
+  - CodeChef provides an API for fetching contests via the following endpoint:
+    - `https://www.codechef.com/api/list/contests/all?sort_by=START&sorting_order=asc&offset=0&mode=all`
+  - Used this official API to fetch upcoming contests, avoiding the need for scraping.
 
 ### CodeForces
 
@@ -31,7 +31,7 @@ This project fetches contest and problem data from **CodeChef**, **CodeForces**,
   - There is no GraphQL API endpoint for upcoming contest data.
   - Checked the **Network tab** in browser developer tools for potential endpoints, but no API endpoint was found for upcoming contests. All contest data had to be scraped directly from the website.
   - Two methods were used to scrape [LeetCode's contest page](https://leetcode.com/contest/):
-    1. **Using ScrapingBee API**:
+    1. **Using ScrapingBee API**.
     2. **Using Puppeteer (Node.js)**: Implemented as described in this [Gist](https://gist.github.com/VarshithSoma/0cda3f37a4df35d631faa79b9a83d2cb).
 
 ## Using a CORS Proxy
