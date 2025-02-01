@@ -44,6 +44,7 @@
   width: 80%;
   margin: 10px 0px;
   border: 2px solid #e8edf3;
+  cursor: pointer;
 }
 
 .data h3 {

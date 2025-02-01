@@ -38,9 +38,15 @@ function Contest(props) {
 
     return () => clearInterval(intervalId);
   }, [duration]);
+  const handleClick = (myLink) => () => {
+    window.location.href = myLink;
+  };
 
   return (
-    <div className="contest">
+    <div
+      className="contest"
+      onClick={handleClick("https://leetcode.com/contest/")}
+    >
       <div className="data">
         <div className="heading">
           <img src={leetCodeLogo} className="small" alt="LeetCode Logo" />
