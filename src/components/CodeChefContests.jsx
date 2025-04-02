@@ -13,7 +13,7 @@ function CodeChefContests() {
         const response = await fetch(url);
         const res = await response.json();
 
-        console.log(res.future_contests);
+        // console.log(res.future_contests);
         if (res.status === "success") {
           const data = res.future_contests; // Assuming 'future_contests' is the correct field in the response
           console.log(data);
