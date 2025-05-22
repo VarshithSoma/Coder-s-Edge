@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import Header from "./components/Header";
 import LeetCodeContests from "./components/LeetCodeContests";
 import CodeForcesContests from "./components/CodeForcesContests";
 import CodeChefContests from "./components/CodeChefContests";
+import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 
 function App() {
   const [selectedPlatform, setSelectedPlatform] = useState("CodeChef");
+  // eslint-disable-next-line no-unused-vars
   const [isLoading, setIsLoading] = useState(false);
 
   const handlePlatformChange = (platform) => {
@@ -70,6 +72,7 @@ function App() {
           <CodeForcesContests />
         </span>
       </div>
+      <Analytics />
     </>
   );
 }
