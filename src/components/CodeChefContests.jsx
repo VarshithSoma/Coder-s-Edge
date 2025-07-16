@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import CodeChefComponent from "./CodeChefComponent";
 
 function CodeChefContests() {
@@ -7,7 +7,7 @@ function CodeChefContests() {
   useEffect(() => {
     async function fetchData() {
       // Use a CORS proxy to bypass the CORS issue
-      const proxyUrl = "https://api.codetabs.com/v1/proxy?quest="; // Public proxy service
+      const proxyUrl = "https://cors-anywhere.com/"; // Public proxy service
       const url = `${proxyUrl}https://www.codechef.com/api/list/contests/all?sort_by=START&sorting_order=asc&offset=0&mode=all`;
       try {
         const response = await fetch(url);
@@ -25,6 +25,7 @@ function CodeChefContests() {
           }));
 
           setContests(formattedContests);
+          console.log(contests);
         } else {
           console.error("Error fetching contests:", res.message);
         }

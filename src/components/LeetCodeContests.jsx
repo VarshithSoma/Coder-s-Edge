@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Contest from "./LeetCodeComponent";
 
 function LeetCodeContests() {
@@ -21,6 +21,7 @@ function LeetCodeContests() {
         const doc = parser.parseFromString(htmlText, "text/html");
         // Extract the contests data
         const contests = [];
+        console.log(htmlText);
         const contestElements = doc.querySelectorAll("a.w-full");
         if (contestElements.length >= 3) {
           contestElements.forEach((element) => {
