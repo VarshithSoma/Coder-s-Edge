@@ -7,7 +7,7 @@ function CodeChefContests() {
   useEffect(() => {
     async function fetchData() {
       // Use a CORS proxy to bypass the CORS issue
-      const proxyUrl = "https://cors-anywhere.com/"; // Public proxy service
+      const proxyUrl = "https://go.x2u.in/proxy?email=22311a6904@iot.sreenidhi.edu.in&apiKey=962d6cf0&url="; // Public proxy service
       const url = `${proxyUrl}https://www.codechef.com/api/list/contests/all?sort_by=START&sorting_order=asc&offset=0&mode=all`;
       try {
         const response = await fetch(url);
